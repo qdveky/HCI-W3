@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HCI ASSIGNMENT-02</title>
+    <style>
+        body {
+        max-width: max-content;
+        margin: auto;
+        background-image: url("fb.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        }
+
+        table {
+        border-collapse: separate;
+        background-color:rgba(179, 223, 179, 0.711)
+        }
+
+        th,
+        td {
+        width: 400px;
+        text-align: center;
+        padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h1> Application to Football Club Senayan</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email"><br><br>                        
+                    </fieldset>
+                </td>
+            </tr>   
+            <tr>
+                <td>
+                    <label for="activity">Playing for another team right now:</label>
+                    <input type="radio" name="activity" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="activity" id="no" value="no">
+                    <label for="female">No</label>
+                </td>
+                <td>
+                    <label for="teamname">Team name: </label>
+                    <input type="text" name="teamname"><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>                    
+                            <label for="position">Positions I can play: </label><br>
+                            <input type="checkbox" id="forward" name="forward" value="Forward">
+                            <label for="forward">Forward</label><br>
+                            <input type="checkbox" id="mid" name="mid" value="Midfielder">
+                            <label for="mid">Midfielder</label><br>
+                            <input type="checkbox" id="def" name="def" value="Defender">
+                            <label for="def">Defender</label><br>
+                            <input type="checkbox" id="gk" name="gk" value="Goalkeeper">
+                            <label for="gk">Goalkeeper</label><br><br>
+                        </td>
+                
+                        <td style="text-align: center">
+                            <label for="prefposition">Preferable position:</label>
+                            <select name="position" id="position">
+                                <option>Select position</option>
+                                <option value="striker">Forward</option>
+                                <option value="mid">Midfielder</option>
+                                <option value="def">Defender</option>
+                                <option value="gk">Goalkeeper</option>
+                        </td>
+                </td>
+
+
+
+            <tr>
+                <td>
+                    </select>
+                    <label for="goals">Goals and ambitions:</label><br>
+                    <textarea name="memory" id="memory" cols="30" rows="4"></textarea><br><br>
+                </td>
+
+                <td rowspan="2" style="vertical-align: top;">
+                    <br><br>
+                    <img src="training.jpg" style="width:260px;height:200px;"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date propsal for meeting the coach:</label><br><br>
+                    <input type="date" id="date" name="Date"><br><br><br>
+                    <input type="submit" value="Submit">
+                    <br><br><br><br>
+                </td>
+            </tr>
+          
+        </table>
+        
+    </form>
+</body>
+</html>
